@@ -16,7 +16,7 @@ const remove = async () => {
 
     await unlink(initialFile);
   } catch (error) {
-    console.log(error);
+    console.log(error.message);
   }
 };
 

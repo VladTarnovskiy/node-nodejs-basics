@@ -13,7 +13,7 @@ const list = async () => {
     const files = await readdir(initialFile);
     files.forEach((file) => console.log(file));
   } catch (error) {
-    console.log(error);
+    console.log(error.message);
   }
 };
 

@@ -13,7 +13,7 @@ const read = async () => {
     const data = await readFile(initialFile, { encoding: "utf8" });
     console.log(data);
   } catch (error) {
-    console.log(error);
+    console.log(error.message);
   }
 };
 

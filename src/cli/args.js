@@ -6,7 +6,6 @@ const parseArgs = () => {
         console.log(`${arg.slice(2)} is ${argvList[index + 1]}`);
       }
     });
-    console.log(argvList);
   } catch (error) {
     console.log(error.message);
   }

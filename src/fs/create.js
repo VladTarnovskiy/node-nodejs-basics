@@ -11,8 +11,8 @@ const create = async () => {
       throw new Error("FS operation failed");
     }
     await writeFile(fileUrl, data);
-  } catch (err) {
-    console.error(err);
+  } catch (error) {
+    console.error(error.message);
   }
 };
 

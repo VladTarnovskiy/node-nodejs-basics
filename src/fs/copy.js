@@ -13,7 +13,7 @@ const copy = async () => {
 
     await cp(sourceDir, distDir, { recursive: true });
   } catch (error) {
-    console.log(error);
+    console.log(error.message);
   }
 };
 
