@@ -7,8 +7,6 @@ const copy = async () => {
   const distDir = getPathToFile(import.meta.url, "files_copy", "");
 
   try {
-    await checkFileExist(distDir);
-
     if ((await checkFileExist(distDir)) || !(await checkFileExist(sourceDir))) {
       throw new Error("FS operation failed");
     }
